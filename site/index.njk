@@ -2,4 +2,4 @@
 layout: layouts/base.njk
 title: Sector Space
 ---
-<div class="grid">{% for item in home.posts %}<div class="col box"><a class="grid-item" href="/{{ item.path }}">{{ item.description }}<div class="grid-item-content"><div class="date-title-home"> {{ item.pubDate | date }}</div><h2>{{ item.title }}</h2></div><div class="gradient"></div></a></div>{% endfor %}</div>
+<div class="grid">{% for item in home.posts %}<div class="col box"><a class="grid-item" href="/{{ item.path }}">{{ item.description }}<div class="grid-item-content"><div class="date-title-home"> {{ item.pubDate | date }}</div><h2>{{ item.title }}</h2></div></a></div>{% endfor %}</div>
