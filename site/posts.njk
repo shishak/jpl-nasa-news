@@ -6,8 +6,8 @@ pagination:
   alias: item
 permalink: /{{ item.path }}/index.html
 ---
-<div class="content"><h1>{{ item.title }}</h1><div class="date-title">{{ item.pubDate | date }}</div>{{ item['content:encoded'] | safe }}</div>
+<div class="content"><h1>{{ item.title }}</h1><div class="date-title">{{ item.pubDate | date }}</div>{{ item.description }}</div>
 
 <div class="sidebar">День захисника України був оголошений державним святом та вихідним у 2015 році з ініціативи п'ятого президента України Петра Порошенка. День захисника України відзначається щороку 14 жовтня у день Покрови Пресвятої Богородиці водночас з іншим святом - Днем українського козацтва.Рішення про створення Дня захисника України, як йдеться в президентському указі, було ухвалене з метою вшанування мужності та героїзму захисників територіальної цілісності та незалежності України, а також сприянню зміцненню патріотизму у суспільстві.</div>
 
-<div class="grid">{% for item in homepost.posts %}<div class="col box"><a class="grid-item" href="/{{ item.path }}">{{ item['content:encoded'] | safe }}<div class="grid-item-content"><div class="date-title-home"> {{ item.pubDate | date }}</div><h2>{{ item.title }}</h2></div><div class="gradient"></div></a></div>{% endfor %}</div>
+<div class="grid">{% for item in homepost.posts %}<div class="col box"><a class="grid-item" href="/{{ item.path }}">{{ item['content:encoded'] | safe }}<div class="grid-item-content"><div class="date-title-home"> {{ item.pubDate | date }}</div><h2>{{ item.title }}</h2></div></a></div>{% endfor %}</div>
