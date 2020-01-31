@@ -1,7 +1,7 @@
 var axios  = require('axios');
 var toJSON = require('xml2js').parseString;
 
-var url = process.env.MEDIUM_FEED ||'https://www.jpl.nasa.gov/multimedia/rss/news.xml';
+var url = process.env.MEDIUM_FEED ||'http://34.90.22.150/?feed=rss2';
 
 module.exports = () => {
   return new Promise((resolve, reject) => {
